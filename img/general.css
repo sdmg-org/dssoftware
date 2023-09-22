@@ -1,0 +1,32 @@
+html, body{
+background-color: #e5f2fb!important;
+color: #7878ac !important;
+}
+.bg-light {
+    width: 100%;
+}
+.top_header{
+ text-align: center;
+  font-weight:700;
+ margin-bottom:20px;
+}
+marquee{
+margin:10px 0px 10px 0px;
+}
+.nav-container{
+ margin-left:20px !important;
+ margin-right:20px !important;
+ padding:5px;
+ border-radius: 15px;
+}
+.main_container{
+margin-bottom: 20px !important;
+    background: #ffffff!important;
+    margin-top: 20px;
+    height: 550px;
+    overflow:auto;
+    width: 100%!important;
+    max-width: 100%!important;
+    border-radius: 15px;
+}
+}
