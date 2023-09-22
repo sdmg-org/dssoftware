@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="general.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   <title>Shree Dev Maharaj Group </title>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+ <div class="top_header"><a href="https://www.g20.org" title="G20 India"><img class="g20-logo" style="float: left;height: 50px;" src="img/g20-logo.png" alt="G20 logo"></a>Welcome to Shree Dev Maharaj Group<a href="https://www.g20.org" title="G20 India"> <img class="g20-logo" src="img/g20-logo.png" alt="G20 logo" style="float: right;height: 50px;"></a></div> 
+ 
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SDMG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link active" href="#">Contact Us</a>
+            <a class="nav-link " href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main_container">
+      <marquee>Please contact us for build a Website or any Software Solution</marquee>
+     <div class="container">
+<div class="row">
+<div class="col-md-5 mr-auto">
+<h2>Call or Email Us</h2>
+<p class="mb-5">Daya Software Solution Pvt. Ltd., We are providing services in Web Designing ,App Development , Domain Solution and Content writing Please contact us for Serving!</p>
+<ul class="list-unstyled pl-md-5 mb-5">
+<li class="d-flex text-black mb-2">
+<span class="mr-3"><span class="icon-map"></span></span> 284 Suiwala, Pratibha Nagar Gadrata , <br> Rajasthan India 333501
+</li>
+<li class="d-flex text-black mb-2"><span class="mr-3"><span class="icon-phone"></span></span> +91 9920920527</li>
+<li class="d-flex text-black"><span class="mr-3"><span class="icon-envelope-o"></span></span> info@dayasoftware.com </li>
+ <li class="d-flex text-black mb-2">Everyday 6:00 am - 10:00 pm</li> 
+</ul>
+</div>
+<div class="col-md-6">
+<form class="mb-5" id="contactForm" name="contactForm" novalidate="novalidate" action="https://formspree.io/f/xeqbkywj" method="POST">
+<div class="row">
+<div class="col-md-12 form-group">
+<label for="name" class="col-form-label">Name</label>
+<input type="text" class="form-control" name="name" id="name" required>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 form-group">
+<label for="email" class="col-form-label">Email</label>
+<input type="text" class="form-control" name="email" id="email" required>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 form-group">
+<label for="message" class="col-form-label">Message</label>
+<textarea class="form-control" name="message" id="message" cols="30" rows="7" required></textarea>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" style="margin-top:20px;">
+<span class="submitting"></span>
+</div>
+</div>
+</form>
+<div id="form-message-warning mt-4"></div>
+<div id="form-message-success" class="alert alert-success" style="display:none;">
+
+</div>
+</div>
+</div>
+
+</div>
+    </div> 
+   <div class="top_header">DayaSoft &copy; 2023. All rights reserved.</div> 
+  </body>
+</html>
+<script>
+    var form = document.getElementById("contactForm");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("form-message-success");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+      status.style.display="";
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
