@@ -4,7 +4,9 @@ color: #3d246e !important;
 }
 
 .main_container img {
-   
+      width: -webkit-fill-available;
+    height: -webkit-fill-available;
+
     margin-bottom: 3rem!important;
 }
 .bg-light {
