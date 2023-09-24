@@ -3,7 +3,7 @@ background-color: #e5f2fb!important;
 color: #3d246e !important;
 }
 
-.main_container img {
+.main_container img :not("#donate-button"){
       width: -webkit-fill-available;
     height: -webkit-fill-available;
 
