@@ -2,9 +2,10 @@ html, body{
 background-color: #e5f2fb!important;
 color: #3d246e !important;
 }
-img{
-margin-bottom: 3rem!important;
 
+img {
+   
+    margin-bottom: 3rem!important;
 }
 .bg-light {
     width: 100%;
