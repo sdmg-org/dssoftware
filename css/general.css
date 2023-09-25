@@ -2,7 +2,9 @@ html, body{
 background-color: #e5f2fb!important;
 color: #3d246e !important;
 }
-
+#paypal-donate-button-container img{
+      width:auto !important;
+}
 .main_container img {
       width: -webkit-fill-available;
     height: -webkit-fill-available;
