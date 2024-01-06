@@ -75,9 +75,8 @@ In addition to offering reliable and affordable web developing services . You do
 
 </div>
 <div id="form-message-warning mt-4">
-    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_N7A84V46WUNpLR" async> </script> </form>
+    
 
-  <div id="paypal-donate-button-container"></div>
 </div>
 <div id="form-message-success">
 
@@ -100,20 +99,5 @@ In addition to offering reliable and affordable web developing services . You do
   <a href="https://merchant.razorpay.com/policy/N79j84ssyOqegH/privacy">Privacy Policy</a> <a href="https://merchant.razorpay.com/policy/N79j84ssyOqegH/refund">Refund</a>
   <a href="https://merchant.razorpay.com/policy/N79j84ssyOqegH/shipping">Shipping  </a>
   </div></body>
-  <script>
-   PayPal.Donation.Button({
-       env: 'sandbox',
-       //hosted_button_id: 'sb-mmwdl25918131@business.example.com',
-      // hosted_button_id: 'YOUR_SANDBOX_HOSTED_BUTTON_ID',
-       business: 'sb-am83c27297736@business.example.com',
-       image: {
-           src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-           title: 'PayPal - The safer, easier way to pay online!',
-           alt: 'Donate with PayPal button'
-       },
-       onComplete: function (params) {
-           // Your onComplete handler
-       },
-   }).render('#paypal-donate-button-container');
-</script>
+  
 </html>
