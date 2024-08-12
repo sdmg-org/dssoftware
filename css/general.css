@@ -32,7 +32,7 @@ margin:10px 0px 10px 0px;
 margin-bottom: 20px !important;
     background: #ffffff!important;
     margin-top: 20px;
-    height: 550px;
+    height: calc(100% - 10px);
     overflow:auto;
     width: 100%!important;
     max-width: 100%!important;
@@ -42,4 +42,5 @@ margin-bottom: 20px !important;
 .termofusepanel a{
       padding:10px;
       color:gray;
+      text-align: center;
 }
